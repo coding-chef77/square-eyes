@@ -1,0 +1,104 @@
+/*
+#edaa09
+#0b110d
+#0950ed
+#979993
+#a07217
+----------------*/
+/*@font-face {
+    font-family: "DIN Condensed";
+    src: url("/fonts/din-condensed-Regular-webfont.woff2") format("woff2"),
+         url("/fonts/din-condensed-Regular-webfont.woff") format("woff");
+  } It doesn't do anything so I left it out! */
+
+.content {
+    font family: Tahoma, sans-serif; 
+    font-size: 1,5em;
+}
+
+.content-text {
+    font family: din-condensed, sans-serif;
+    font-size: 1em;
+}
+
+ul {
+    margin-left: 800px;
+    padding: 0px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .content::after {
+    clear: both;
+    content: "";
+    display: table:
+    }
+    
+  .pic {
+    display: flex;
+    margin: auto;
+    flex-direction:row;
+  }
+
+nav,
+footer {
+  background-color: #979993;
+  color: #0b110d;
+  padding: 5px;
+}
+
+header {
+  background-color: #edaa09;
+  padding: 10px;
+}
+
+main {
+  background-color: #0b110d;
+  padding: 200px;
+}
+
+h1,
+p {
+  color: #edaa09;
+}
+
+footer {
+  text-align: center;
+}
+
+.logo {
+  max-width: 200px;
+  border-radius: 20px 50px 30px 10px;
+  padding: 10px;
+}
+
+  body {
+    min-height: 100vh;
+    grid: 'header' auto
+          'nav' auto
+          'main' 1fr
+          'footer' auto
+        / 1fr; 
+  }
+  
+ @media (min-width: 600px) and (max-width: 1200px) {
+    body {
+      grid: 'nav nav' auto
+            'header header' 1fr
+            'main main'
+            'footer footer' auto
+          / 12em 1fr;
+    }
+  }
+  
+  nav { grid-area: nav; }
+  header { grid-area: header; }
+  main { grid-area: main; }
+  footer { grid-area: footer; }
+  
