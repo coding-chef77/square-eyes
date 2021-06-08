@@ -5,48 +5,13 @@
 #979993
 #a07217
 ----------------*/
-/*@font-face {
+@font-face {
     font-family: "DIN Condensed";
     src: url("/fonts/din-condensed-Regular-webfont.woff2") format("woff2"),
          url("/fonts/din-condensed-Regular-webfont.woff") format("woff");
-  } It doesn't do anything so I left it out! */
+  } 
 
-.content {
-    font family: Tahoma, sans-serif; 
-    font-size: 1,5em;
-}
-
-.content-text {
-    font family: din-condensed, sans-serif;
-    font-size: 1em;
-}
-
-ul {
-    margin-left: 800px;
-    padding: 0px;
-  }
-  
-  li {
-    display: inline-block;
-  }
-
-  a {
-    text-decoration: none;
-  }
-  
-  .content::after {
-    clear: both;
-    content: "";
-    display: table:
-    }
-    
-  .pic {
-    display: flex;
-    margin: auto;
-    flex-direction:row;
-  }
-
-nav,
+  nav,
 footer {
   background-color: #979993;
   color: #0b110d;
@@ -68,8 +33,48 @@ p {
   color: #edaa09;
 }
 
+p {
+    max-width: 600px;
+}
+
 footer {
   text-align: center;
+}
+
+ul {
+    margin-left: 800px;
+    padding: 0px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+.home {
+    margin: auto;
+  }
+
+.pic {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-auto-flow: column;
+  }
+   
+  .content {
+    font family: 'Tahoma', 'sans-serif'; 
+    font-size: 1.5em;
+}
+
+.content-text {
+    font-family: 'din-condensed','sans-serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
 }
 
 .logo {
@@ -78,27 +83,13 @@ footer {
   padding: 10px;
 }
 
-  body {
-    min-height: 100vh;
-    grid: 'header' auto
-          'nav' auto
-          'main' 1fr
-          'footer' auto
-        / 1fr; 
-  }
-  
- @media (min-width: 600px) and (max-width: 1200px) {
-    body {
-      grid: 'nav nav' auto
-            'header header' 1fr
-            'main main'
-            'footer footer' auto
-          / 12em 1fr;
-    }
-  }
-  
-  nav { grid-area: nav; }
-  header { grid-area: header; }
-  main { grid-area: main; }
-  footer { grid-area: footer; }
-  
+media only screen and (min-width:600px) and (max-width:920px) {
+	body {
+		width: 80%;
+	}
+}
+@media only screen and (max-width:599px) {
+	body {
+		width: 320px;
+	}
+        
