@@ -1,0 +1,24 @@
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  max-width: 400px;
+}
+
+.pic1 {
+  margin: 10px;
+  float: top;
+  max-width: 400px;
+  /*padding: 70px;*/
+  margin: 90px;
+}
+
+.fix1 {
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}

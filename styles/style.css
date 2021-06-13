@@ -5,17 +5,34 @@
 #979993
 #a07217
 ----------------*/
-@font-face {
+h1 {
     font-family: "DIN Condensed";
-    src: url("/fonts/din-condensed-Regular-webfont.woff2") format("woff2"),
-         url("/fonts/din-condensed-Regular-webfont.woff") format("woff");
-  } 
+}
 
-  nav,
+p {
+    font-family: "tahoma";
+}
+
+h1,
+h2,
+p {
+  color: #edaa09;
+}
+
+p {
+  max-width: 600px;
+}
+
+nav,
 footer {
   background-color: #979993;
   color: #0b110d;
-  padding: 5px;
+  padding: 10px;
+}
+
+.search {
+  text-align: right;
+  border: #edaa09;
 }
 
 header {
@@ -24,72 +41,88 @@ header {
 }
 
 main {
-  background-color: #0b110d;
-  padding: 200px;
-}
-
-h1,
-p {
-  color: #edaa09;
-}
-
-p {
-    max-width: 600px;
+  background-color: #0b110d; 
+  padding-block: 200px;
+  padding: 50px;
 }
 
 footer {
   text-align: center;
 }
 
-ul {
-    margin-left: 800px;
-    padding: 0px;
-  }
-  
-  li {
-    display: inline-block;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-.home {
-    margin: auto;
-  }
-
-.pic {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    grid-auto-flow: column;
-  }
-   
-  .content {
-    font family: 'Tahoma', 'sans-serif'; 
-    font-size: 1.5em;
+a {
+  text-decoration: none;
 }
 
-.content-text {
-    font-family: 'din-condensed','sans-serif';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
+.btn {
+  background-color: #edaa09;
+  color: #0b110d;
+  padding: 4px;
+  border: none;
+  width: auto;
+  border-radius: 3px;
+  cursor: pointer; 
+}
+
+.btn3 {
+    background-color: #979993;
+    color: #0b110d;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    max-width: 300px;
+  }
+
+  .film-maker {
+    float: left;
+  }
+
+.hl {
+  border-top: 3px solid #edaa09;
+  height: 100px;
+}
+
+.home {
+  margin: auto;
+}
+
+.pic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo-making {
+  max-width: 150px;
+  float: right;
+  margin-right: 15px;
+}
+
+.content {
+    font family: 'Tahoma', 'sans-serif'; 
+    font-size: 1.5em;
 }
 
 .logo {
   max-width: 200px;
   border-radius: 20px 50px 30px 10px;
   padding: 10px;
+  width: 100%;
 }
 
-media only screen and (min-width:600px) and (max-width:920px) {
-	body {
-		width: 80%;
-	}
+.film-maker {
+  display: inline-block;
+  padding: 50px;
+  margin: 10px;
 }
-@media only screen and (max-width:599px) {
-	body {
-		width: 320px;
-	}
-        
+
+/*fix this*/
+@media only screen and (min-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}

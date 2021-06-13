@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">    
 <head>
-    <link rel="stylesheet" href="https://use.typekit.net/dqw2bkz.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unlimited streaming for film lovers and makers"/>
-    <title>Square Eyes | Home</title>
+    <meta name="description" content="Members info site"/>
+    <title>Square Eyes | Account page</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dqw2bkz.css">
     <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
-        <ul>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">Login</a></li>   
-      </nav>
+        <section class="search">
+            <input type="search" id="site-search" name="q"
+                   aria-label="Search through site content">
+                   <button class="btn"><i class="fa fa-search"></i></button>   
+        </section>    
+    </nav>
     <header>       
        <a href="index.html"><img src="images/square_eyes_logo.png" alt="Logo of Square eyes" class="logo"></a>
     </header>
-<main class="home">
-    <section class="content">
-        <h1>Welcome to Square Eyes, home of quality independent film making and streaming</h1>
-        </section>
-        <section class="content-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quia recusandae esse nulla odit dolor non aspernatur quasi dicta eaque. Dolor molestias, praesentium reprehenderit veritatis error iusto deleniti aspernatur! Officia.</p>
-        </section>
-        <section class="pic">
-            <div class="pic-link">
-                <a href="films.html"><img src="images/find_films.jpg" alt="Find films here"></a class="link-films"> 
-            </div>       
-            <div class="pic-link">
-                <a href="film_makers.html"><img src="images/share_film.jpg" alt="Share films here"></a class="link-makers">
-            </div>
-            <div class="decoration-link">
-                <img src="images/movie_theatre.jpg" alt="Picture of a nice movie theater in the evening" class="photo-decoration">
-            </div>    
-        </section>
-</main>
+    <main class="home">
+        <section class="content">
+            <h1>Welcome to Square Eyes, home of quality independent film making and streaming</h1>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quia recusandae esse nulla odit dolor non aspernatur quasi dicta eaque. Dolor molestias, praesentium reprehenderit veritatis error iusto deleniti aspernatur! Officia.</p>
+            </section>
+            <section class="pic">
+                <div class="pic-link">
+                    <a href="films.html"><img src="images/find_films.jpg" style="width:100%;" alt="Find films here"></a class="link-films"> 
+                </div>       
+                <div class="pic-link">
+                    <a href="film_makers.html"><img src="images/share_film.jpg" style="width:100%;" alt="Share films here"></a class="link-makers">
+                </div>
+                <div class="decoration-link">
+                    <img src="images/movie_theatre.jpg" style="width:100%;" alt="Picture of a nice movie theater in the evening" class="photo-decoration">
+                </div>    
+            </section>
+    </main>
 <footer>Copyright &copy;</footer>
 </body>
 </html>
