@@ -6,11 +6,18 @@
 #a07217
 ----------------*/
 h1 {
-    font-family: "DIN Condensed";
+    font-family: "DIN Condensed", 'Tahoma', 'sans-serif';
+    font-size: 2em;
+}
+
+h2 {
+    font-family: "DIN Condensed", 'Tahoma', 'sans-serif';
+    font-size: 1.5em;
 }
 
 p {
-    font-family: "tahoma";
+    font-family: "tahoma", 'sans-serif';
+    max-width: 600px;
 }
 
 h1,
@@ -19,20 +26,11 @@ p {
   color: #edaa09;
 }
 
-p {
-  max-width: 600px;
-}
-
 nav,
 footer {
   background-color: #979993;
   color: #0b110d;
   padding: 10px;
-}
-
-.search {
-  text-align: right;
-  border: #edaa09;
 }
 
 header {
@@ -53,6 +51,11 @@ footer {
 a {
   text-decoration: none;
 }
+
+.search {
+    text-align: right;
+    border: #edaa09;
+  }
 
 .btn {
   background-color: #edaa09;
@@ -77,7 +80,7 @@ a {
     max-width: 300px;
   }
 
-  .film-maker {
+.film-maker {
     float: left;
   }
 

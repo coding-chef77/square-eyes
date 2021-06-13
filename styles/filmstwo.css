@@ -6,15 +6,16 @@ h2 {
   max-width: 400px;
 }
 
-.pic1 {
-  margin: 10px;
-  float: top;
-  max-width: 400px;
-  /*padding: 70px;*/
-  margin: 90px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 180px;
 }
 
-.fix1 {
+.pic1 {
+  margin: 10px;
+  max-width: 400px;
+  padding: 70px;
 }
 
 section::after {
