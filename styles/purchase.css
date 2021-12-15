@@ -11,8 +11,12 @@ main {
   padding: 300px;
 }
 
-* {
-  box-sizing: border-box;
+.home {
+  background-image: url("../images/create_login\ .jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .photo-decoration {
@@ -43,12 +47,19 @@ main {
   padding: 0 16px;
 }
 
+.col-75 {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   background-color: #f9f9f9;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
   max-width: 300px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 input[type="text"] {

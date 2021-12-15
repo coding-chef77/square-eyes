@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Members info site" />
+    <title>Square Eyes | Account page</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dqw2bkz.css" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Hotjar Tracking Code for https://angry-joliot-5d1d77.netlify.app -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2745522, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navigation">
+          <ul>
+            <li class="logo">
+              <a href="index.html"
+                ><img
+                  src="images/square_eyes_logo.png"
+                  alt="Logo of Square eyes"
+                  class="logo"
+              /></a>
+            </li>
+            <li class="leftnav nav__item">
+              <a href="film_page.html">Find Films</a>
+            </li>
+            <li class="leftnav nav__item">
+              <a href="account_maker.html">Upload Films</a>
+            </li>
+            <li class="rightnav nav__item">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="rightnav nav__item">
+              <a href="account.html">My Account</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="contact_form">
+        <h1>Contact Form</h1>
+        <div id="sentMessage"></div>
+        <form id="form">
+          <div>
+            <label>
+              <input
+                name="name"
+                id="fullName"
+                placeholder="Your Full Name (required)"
+              />
+            </label>
+            <div class="form-error" id="fullNameError">
+              Please enter your full name
+            </div>
+          </div>
+          <div>
+            <label>
+              <input
+                name="adress"
+                id="adress"
+                placeholder="Your Home Adress (required)"
+              />
+            </label>
+            <div class="form-error" id="adressError">
+              Must have a value with a minimum length of 10
+            </div>
+          </div>
+          <div>
+            <label>
+              <input
+                name="email"
+                id="email"
+                placeholder="Your Email (required)"
+              />
+            </label>
+            <div class="form-error" id="emailError">
+              Please enter your Email
+            </div>
+          </div>
+          <div>
+            <label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Write Your Message"
+              />
+            </label>
+            <div class="form-error" id="subjectError">
+              Must have a value with a minimum length of 10
+            </div>
+          </div>
+
+          <button>Submit</button>
+        </form>
+      </main>
+      <footer>Copyright &copy;</footer>
+    </div>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
