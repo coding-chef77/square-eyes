@@ -71,9 +71,6 @@ p {
   order: 3;
 }
 
-nav {
-  margin-top: 5rem;
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -217,16 +214,9 @@ main {
 	justify-content: center;
 	min-height: 100vh;
 	margin: 0;
-  background-image: url("../images/create_login\ .jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+ 
 }
 
-.contact_form h1 {
-  color:#0b110d;
-}
 .card {
 	display: flex;
 	flex-direction: column;
@@ -262,6 +252,7 @@ button {
 	color: white;
 	margin-top: 10px;
 	border-radius: 0.5rem;
+  
 }
 
 button:hover,

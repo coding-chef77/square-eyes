@@ -43,7 +43,8 @@ function validateForm(event) {
   }
 
   if (formIsValid === true) {
-    sentMessage.innerHTML = "Message sent";
+    sentMessage.innerHTML =
+      "Message sent, we'll be in touch with you as soon as we can!";
   } else {
     sentMessage.innerHTML = "";
   }
