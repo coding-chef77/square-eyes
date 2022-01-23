@@ -5,14 +5,15 @@ async function getProducts(url) {
   const response = await fetch(url);
   const products = await response.json();
 
-  resultContainer.innerHTML = "";
+  console.log(products);
 
   products.forEach(function (product) {
     resultContainer.innerHTML += `
     <div class="result">
     <a href="film_page_descripton.html">
     <h2>${product.name}</h2>
-    <img class="image" src="${product.images[0].src}"></img>                               
+    <img class="image" src="${product.images[0].src}"></img>
+                               
     </a>
     </div
     `;
