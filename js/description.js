@@ -4,17 +4,21 @@ const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
 
-const id = params.get("description");
+const id = params.get("id");
 
-const url = "https://www.hgportfolio.one/wp-json/wc/store/products" + id;
+const url =
+  "https://www.hgportfolio.one/wp-json/wc/v1/products/" +
+  id +
+  "?consumer_key=ck_7c308eadf64e1ada28e4eec1c5cd2991f5bdc421&consumer_secrets=cs_10828a248005464dcfb737feb0990f39c9c5578a";
+
+const name = params.get("title");
 
 async function getDescription() {
   try {
     const response = await fetch(url);
-    const product = await response.json();
-    console.log(product);
-
-    createHtml(filmDetails);
+    const details = await response.json();
+    console.log(details);
+    createHtml(details);
   } catch (error) {
     descriptContainer.innerHTML = `<p>Ooops, something went wrong!</p>
                                    <p>Please try again later :)</p>
@@ -24,12 +28,12 @@ async function getDescription() {
 
 getDescription();
 
-function createHtml(product) {
+function createHtml(details) {
   descriptContainer.innerHTML = `
-                                <div class="result">
-                                <2>${product.name}</2>
-                               
-                                <img class="image" src="${product.images[0].src}"></img>
-                                <p>${product.description}</p>  
-                                </div>`;
+                                <h1>${product.name}</h1>
+                                <div class="description">                          
+                                ${product.description}
+
+                                </div>
+                                <img class="image" src="${product.images[0].src}"></img>`;
 }
