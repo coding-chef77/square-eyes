@@ -6,6 +6,7 @@ const baseUrl =
 async function getProducts(url) {
   const response = await fetch(url);
   const products = await response.json();
+  resultContainer.innerHTML = "";
 
   products.forEach(function (product) {
     resultContainer.innerHTML += `

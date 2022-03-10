@@ -19,14 +19,15 @@
 ----------------*/
 body {
   height: 100vh;
-  max-width: 1400px;  
   line-height: 1.6;
   font-family: "DIN Condensed", "Tahoma", "sans-serif";
-  font-size: 1.2rem;
+  font-size: 0.75rem;
 }
 
 h1 {
+    font-size: 2.5rem;
     line-height: 1.2;
+    font-weight:600;
 }
 
 h2 {
@@ -38,7 +39,7 @@ p {
     font-family: "tahoma", 'sans-serif';
     max-width: 600px;
     line-height: 1;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 h1,
@@ -55,8 +56,16 @@ p {
   align-items: center;
 }
 
+.nav__item {
+  font-size: 1.2rem;
+}
+
 .leftnav {
   order: 1;
+}
+
+.rightnav {
+  order: 3;
 }
 
 .logo {
@@ -64,10 +73,6 @@ p {
   max-width: 250px;
   border-radius: 20px 50px 30px 10px;
   width: 100%;
-}
-
-.rightnav {
-  order: 3;
 }
 
 ul {
@@ -102,13 +107,12 @@ header {
 }
 
 main {
-  background-color: #0b110d; 
-  padding-block: 200px;
-  padding: 50px;
-}
+  
+} 
 
 .container {
   margin: 0 auto;
+  max-width: 1200px;  
 }
 
 .search {
@@ -151,24 +155,34 @@ main {
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 30px;
-  background-image: url("../images/home-theater-2.jpg");
+  min-height: 100vh;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1.3em;
+
+  }
+
+  .home p {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+  }
+
+#landing-page {
+  
+  background-image: url("../images/seats.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
 }
 
 .film_makers h1{
   text-align: center;
-}
-
-.film_list {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
 .intro_text {
@@ -191,7 +205,6 @@ main {
 
 .content {
     font family: 'Tahoma', 'sans-serif'; 
-    font-size: 1.6em;
     text-align: center;
 }
 
@@ -229,20 +242,11 @@ main {
 	background-size: cover;
 }
 
-.results {
- 
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 30px;
-  background: rgba(237, 170, 9, 0.5);
-  padding: 20px;
+.image-individual {
+  max-height: 500px;
+  margin-bottom: 4em;
 }
 
-.result {
-  
-}
 
 .form-error {
 	display: none;
