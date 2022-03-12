@@ -1,7 +1,20 @@
+h1 {
+  color: #0b110d;
+}
+
+.content h1 {
+  color: #edaa09;
+}
+
 h2 {
   font-size: 1.5rem;
   color: #fefefe;
   text-align: left;
+}
+
+p {
+  color: #0b110d;
+  font-size: 1.2rem;
 }
 .home_film {
   background-image: url("../images/films-choice.jpg");
@@ -22,9 +35,6 @@ h2 {
   max-width: 1000px;
 }
 
-.result {
-}
-
 .film_list {
   display: flex;
   flex-direction: column;
@@ -32,6 +42,12 @@ h2 {
   align-items: center;
   gap: 4em;
   margin-bottom: 4em;
+}
+
+.background-movie {
+  background-color: #edaa09;
+  padding: 20px;
+  box-shadow: 0 5px 15px 0;
 }
 
 #header-film {

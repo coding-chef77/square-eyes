@@ -27,9 +27,11 @@ getMovieInfo();
 
 function createHtml(details) {
   descriptContainer.innerHTML = `
+                                <div class="background-movie">
                                 <h1 id="header-film">${details.name}</h1>
                                 <div class="description">                          
                                 ${details.description}
                                 </div>
-                                <img class="image-individual" src="${details.images[0].src}"></img>`;
+                                <img class="image-individual" src="${details.images[0].src}"></img>
+                                </div>`;
 }
