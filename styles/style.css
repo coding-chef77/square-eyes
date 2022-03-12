@@ -28,6 +28,7 @@ h1 {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight:600;
+    
 }
 
 h2 {
@@ -181,8 +182,25 @@ main {
   
 }
 
+.film_makers {
+  background-color: #0b110d;
+  min-height: 100vh;
+ 
+}
+
 .film_makers h1{
   text-align: center;
+  padding: 1em;
+  
+}
+
+.film_makers h2 {
+  color: #edaa09;
+  font-size: 2.5rem;
+}
+
+.film_makers h3 {
+  font-size: 2rem;
 }
 
 .intro_text {
@@ -206,7 +224,11 @@ main {
 .content {
     font family: 'Tahoma', 'sans-serif'; 
     text-align: center;
+   
+    
 }
+
+
 
 .content h3, p {
   text-align: start;
@@ -217,6 +239,10 @@ main {
   display: inline-block;
   padding: 50px;
   margin: 10px;
+}
+
+.account-info {
+  margin-left: 20px;
 }
 
 .contact_form {
