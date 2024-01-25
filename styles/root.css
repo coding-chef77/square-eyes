@@ -1,0 +1,49 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+#edaa09
+#0b110d
+#0950ed
+#979993
+#a07217
+----------------*/
+body {
+  height: 100vh;
+  line-height: 1.6;
+  font-family: "DIN Condensed", "Tahoma", "sans-serif";
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "DIN Condensed", "Tahoma", "sans-serif";
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "tahoma", "sans-serif";
+  max-width: 600px;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+h1,
+h3,
+p {
+  color: #edaa09;
+}

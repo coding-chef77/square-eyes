@@ -9,69 +9,65 @@
       name="description"
       content="Unlimited streaming for film lovers and makers"
     />
-    <title>Square Eyes | Film choice</title>
+    <title>Square Eyes | Film valg</title>
     <link rel="stylesheet" href="https://use.typekit.net/dqw2bkz.css" />
     <link href="styles/style.css" rel="stylesheet" />
-    <link href="styles/films.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Hotjar Tracking Code for https://angry-joliot-5d1d77.netlify.app -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2745522, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <script src="js/script.js" defer></script>
+    <script src="js/api-integration.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <ul>
-          <li class="logo">
-            <a href="index.html"
-              ><img
+      <div class="logo-container">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="index.html">
+              <img
                 src="images/square_eyes_logo.png"
                 alt="Logo of Square eyes"
-                class="logo"
-            /></a>
-          </li>
-          <li class="leftnav nav__item">
-            <a href="film_page.html">Find Films</a>
-          </li>
-          <li class="leftnav nav__item">
-            <a href="account_maker.html">Upload Films</a>
-          </li>
-          <li class="rightnav nav__item"><a href="contact.html">Contact</a></li>
-          <li class="rightnav nav__item">
-            <a href="account.html">My Account</a>
-          </li>
-        </ul>
-      </nav>
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="film_page.html">Find Films</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="home">
       <div class="home_film">
         <section class="content">
-          <h1>Films</h1>
-          <div class="hl"></div>
+          <h1>Find Films</h1>
+          <form id="search-form">
+            <input
+              type="text"
+              id="search-keyword"
+              placeholder="Enter keywords..."
+              required
+            />
+            <button type="submit">Search</button>
+          </form>
         </section>
         <div class="film_list">
-          <div class="results"></div>
-          <!-- <div class="loader"></div> -->
+          <div id="results"></div>
+          <div id="loader" style="display: none">Loading...</div>
+          <div id="error-message" style="display: none"></div>
         </div>
       </div>
     </main>
-    <footer>Copyright &copy;</footer>
-    <script src="js/script.js"></script>
+    <footer>
+      <div id="footer-content">
+        Copyright &copy; <span id="current-year"></span>
+      </div>
+    </footer>
   </body>
 </html>

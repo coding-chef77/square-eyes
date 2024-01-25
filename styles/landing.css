@@ -1,0 +1,61 @@
+/* Main Section Styles */
+#landing-page {
+  background-image: url("../images/seats.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 100vh;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1.3em;
+  color: #edaa09; /* Adjusted for visibility */
+}
+
+.home p {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #fff; /* Adjusted for readability */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for better readability */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.intro_text {
+  align-self: center;
+  margin-bottom: 20px; /* Adjust as needed for desired space */
+}
+
+.pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pic-link {
+  margin: 0 auto;
+}
+
+.link-films,
+.link-makers {
+  transition: transform 0.3s ease;
+}
+
+.link-films:hover,
+.link-makers:hover {
+  transform: scale(1.05);
+}

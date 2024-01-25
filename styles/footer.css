@@ -1,0 +1,22 @@
+footer {
+  background-color: #979993;
+  color: #0b110d;
+  padding: 10px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  border-top: 3px solid #0b110d;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
