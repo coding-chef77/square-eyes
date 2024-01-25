@@ -10,14 +10,13 @@
       content="Unlimited streaming for film lovers and makers"
     />
     <title>Square Eyes | Film choice</title>
-    <link rel="stylesheet" href="https://use.typekit.net/dqw2bkz.css" />
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/films.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="js/api-integration.js" defer></script>
+    <script src="js/movie-details.js" defer></script>
   </head>
   <body>
     <header>
@@ -43,19 +42,11 @@
         </nav>
       </div>
     </header>
-    <main class="home home_film">
-      <div class="content">
-        <div>
-          <h1>Films</h1>
-          <div class="hl"></div>
-        </div>
-        <div class="film_list">
-          <div class="description">
-            <div class="loader"></div>
-          </div>
-          <a href="film_page.html" class="cta cta-small"> Back To Films </a>
-        </div>
-      </div>
+    <main class="home">
+      <div id="loader" style="display: none">Loading...</div>
+      <div id="error-message" style="display: none"></div>
+
+      <div id="results"></div>
     </main>
     <footer>
       <div id="footer-content">
