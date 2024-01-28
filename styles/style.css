@@ -1,16 +1,30 @@
 @import url("root.css");
-@import url('header.css');
+@import url("header.css");
 @import url("landing.css");
 @import url("films.css");
 @import url("footer.css");
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;  
+  max-width: 1200px;
 }
 
 #search-form {
-  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+}
+
+#search-form-heading {
+  margin-bottom: 20px;
+}
+
+#search-keyword {
+  width: 60%;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 #search-keyword {
@@ -18,15 +32,30 @@
   margin-right: 10px;
 }
 
+#search-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#search-form button:hover {
+  background-color: #555;
+}
 #results {
   margin-top: 20px;
 }
 
-.result {
-  margin-bottom: 20px;
-  padding: 10px;
+#results .result {
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .result a {
@@ -44,203 +73,51 @@
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.result a:hover, .result a:focus {
+.result a:hover,
+.result a:focus {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.result img {
-  max-width: 100%;
+#results .result img {
+  width: 100%;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.result h2 {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 1.2rem;
+#results .result h2 {
+  font-size: 1.4rem;
+  margin: 10px 0;
 }
 
-
-.loader, #error-message {
+.loader,
+#error-message {
   margin-top: 20px;
   font-size: 1.2rem;
 }
 
-
-.btn {
-  background-color: #edaa09;
+.btn,
+.btn3,
+.return-button {
+  background-color: #979993;
   color: #0b110d;
-  padding: 4px;
+  padding: 10px 20px;
   border: none;
-  width: auto;
-  border-radius: 3px;
-  cursor: pointer; 
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.btn3 {
-    background-color: #979993;
-    color: #0b110d;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-    max-width: 300px;
-  }
-
-.film-maker {
-    float: left;
-  }
-
-.hl {
-  border-top: 3px solid #edaa09;
-  height: 100px;
-}
-
-.film_makers {
-  background-color: #0b110d;
-  min-height: 100vh;
- 
-}
-
-.film_makers h1{
-  text-align: center;
-  padding: 1em;
-  
-}
-
-.film_makers h2 {
-  color: #edaa09;
-  font-size: 2.5rem;
-}
-
-.film_makers h3 {
-  font-size: 2rem;
-}
-
-
-
-.photo-making {
-  max-width: 150px;
-  float: right;
-  margin-right: 15px;
-}
-
-.content {
-    font family: 'Tahoma', 'sans-serif'; 
-    text-align: center;
-   
-    
-}
-
-
-
-.content h3, p {
-  text-align: start;
-  padding-bottom: 20px;
-}
-
-.film-maker {
-  display: inline-block;
-  padding: 50px;
-  margin: 10px;
-}
-
-.account-info {
-  margin-left: 20px;
-}
-
-.contact_form {
-  display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	margin: 0;
-  background-image: url("../images/create_login\ .jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card {
-	display: flex;
-	flex-direction: column;
-	margin: 1rem;
-}
-
-.image {
-	max-width: 200px;
-  max-height: 300px;
-	padding-top: 10%;
-	background-size: cover;
-}
-
-.image-individual {
-  max-height: 500px;
-  margin-bottom: 4em;
-}
-
-
-.form-error {
-	display: none;
-	color: red;
-	font-family: sans-serif;
-	font-size: 0.6 rem;
-	margin-top: 4px;
-}
-
-form {
-	padding: 2em;
-	background: #979993;
-	border-radius: 1rem;
-}
-
-input {
-	width: 100%;
-	margin-top: 2px;
-	padding: 10px;
-	font-size: 1rem;
-}
-
-button {
-	background: #0950ed;
-	border: none;
-	width: 100px;
-	padding: 1rem;
-	color: white;
-	margin-top: 10px;
-	border-radius: 0.5rem;
-  
-}
-
-button:hover,
-button:active {
+.btn:hover,
+.btn:active,
+.btn3:hover,
+.btn3:active,
+.return-button:hover,
+.return-button:active {
   background-color: #a07217;
 }
 
-.loader {
-	border: 16px solid #f3f3f3;
-	border-top: 16px solid darkslategrey;
-	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-/*fix this*/
 @media only screen and (min-width: 800px) {
   body {
     flex-direction: column;

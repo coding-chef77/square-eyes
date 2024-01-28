@@ -1,4 +1,3 @@
-/* Main Section Styles */
 #landing-page {
   background-image: url("../images/seats.jpg");
   background-size: cover;
@@ -12,31 +11,26 @@
   min-height: 100vh;
 }
 
-.home h1 {
+#landing-page-heading {
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 1em;
   margin-top: 1.3em;
-  color: #edaa09; /* Adjusted for visibility */
+  color: #edaa09;
 }
 
 .home p {
   margin: 0 auto;
   font-size: 1.2rem;
-  color: #fff; /* Adjusted for readability */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Semi-transparent background for better readability */
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   border-radius: 10px;
 }
 
 .intro_text {
   align-self: center;
-  margin-bottom: 20px; /* Adjust as needed for desired space */
+  margin-bottom: 20px;
 }
 
 .pic {

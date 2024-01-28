@@ -28,13 +28,28 @@ async function fetchMovieDetails(id) {
 function displayMovieDetails(movie) {
   const resultsContainer = document.getElementById("results");
   resultsContainer.innerHTML = `
-    <h2>${movie.Title} (${movie.Year})</h2>
-    <img src="${movie.Poster}" alt="${movie.Title}">
-    <p>${movie.Plot}</p>
-    <p>Actors: ${movie.Actors}</p>
-    <p>Runtime: ${movie.Runtime}</p>
-    <!-- Add other details as needed -->
+  <div class="movie-card">
+  <h2>${movie.Title} (${movie.Year})</h2>
+  <div class="movie-details">
+    <div class="movie-poster">
+      <img src="${movie.Poster}" alt="${movie.Title}">
+    </div>
+    <div class="movie-info">
+      <p>${movie.Plot}</p>
+      <p>Director: ${movie.Director}</p>
+      <p>Actors: ${movie.Actors}</p>
+      <p>Release Year: ${movie.Year}</p>
+      <p>Runtime: ${movie.Runtime}</p>
+    </div>
+  </div>
+</div>
   `;
+
+  const returnButton = document.createElement("button");
+  returnButton.textContent = "Back to Films";
+  returnButton.onclick = () => window.history.back();
+  returnButton.className = "return-button"; // Add a class for styling
+  resultsContainer.appendChild(returnButton);
 }
 
 function displayError(message) {

@@ -1,5 +1,11 @@
+/*
+#edaa09
+#0b110d
+#0950ed
+#979993
+#a07217
+----------------*/
 * {
-  /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,13 +16,6 @@
   box-sizing: inherit;
 }
 
-/*
-#edaa09
-#0b110d
-#0950ed
-#979993
-#a07217
-----------------*/
 body {
   height: 100vh;
   line-height: 1.6;

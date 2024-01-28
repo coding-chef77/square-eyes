@@ -33,7 +33,7 @@ function displayResults(results) {
     const div = document.createElement("div");
     div.className = "result";
     div.innerHTML = `
-      <a href="film_page_description.html?id=${movie.imdbID}">
+      <a href="film_page_descripton.html?id=${movie.imdbID}">
         <h2>${movie.Title}</h2>
         <img src="${movie.Poster}" alt="${movie.Title}">
       </a>

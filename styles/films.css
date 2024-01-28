@@ -1,13 +1,3 @@
-h2 {
-  font-size: 1.5rem;
-  color: #fefefe;
-  text-align: left;
-}
-
-p {
-  color: #0b110d;
-  font-size: 1.2rem;
-}
 .home_film {
   background-image: url("../images/films-choice.jpg");
   background-size: cover;
@@ -15,6 +5,9 @@ p {
   background-attachment: fixed;
   background-position: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .results {
@@ -33,35 +26,41 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 4em;
-  margin-bottom: 4em;
 }
 
-.background-movie {
-  background-color: #edaa09;
-  padding: 20px;
-  box-shadow: 0 5px 15px 0;
+.movie-card {
+  /* Add styles for the outer container of the movie card */
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+  max-width: 850px;
 }
 
-#header-film {
-  margin-top: 0;
-  color: #0b110d;
+.movie-card h2 {
+  text-align: center;
+  color: white;
+  font-size: 36px;
 }
-.cta {
-  background: #979993;
-  color: #0b110d;
-  display: inline-block;
-  font-size: 1.6rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 15px;
-  padding: 1em 2.5em;
-  box-shadow: 0 5px 15px 0;
-  transition: background 0.3s ease-in, transform 0.2s 0.1s ease-in-out,
-    border-radius 0.3s ease-in;
+.movie-details {
+  /* Flex container for image and info */
+  display: flex;
+  align-items: start;
+  gap: 20px; /* Adjust the space between the image and info */
 }
 
-.cta:hover,
-.cta:active {
-  background-color: #b5b8b0;
+.movie-poster img {
+  /* Styles for the movie poster image */
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-info {
+  /* Styles for the movie information text */
+  max-width: 600px;
+}
+
+.movie-info p {
+  /* Paragraph styling inside movie info */
+  margin-bottom: 10px; /* Adjust as needed */
 }
