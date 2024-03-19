@@ -6,7 +6,7 @@ document.getElementById("search-form").addEventListener("submit", function (e) {
 
 async function searchMovies(keyword) {
   const apiKey = "53361d6";
-  const apiUrl = `http://www.omdbapi.com/?s=${keyword}&apikey=${apiKey}`;
+  const apiUrl = `https://www.omdbapi.com/?s=${keyword}&apikey=${apiKey}`;
 
   try {
     document.getElementById("loader").style.display = "block";
