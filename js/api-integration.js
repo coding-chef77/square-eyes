@@ -32,12 +32,10 @@ function displayResults(results) {
   results.forEach((movie) => {
     const div = document.createElement("div");
     div.className = "result";
-    const validPoster =
-      movie.Poster !== "N/A" ? movie.Poster : "path/to/default/image.jpg"; // Fallback to a default image if Poster is "N/A"
     div.innerHTML = `
-      <a href="film_page_description.html?id=${movie.imdbID}">
+      <a href="film_page_descripton.html?id=${movie.imdbID}">
         <h2>${movie.Title}</h2>
-        <img src="${validPoster}" alt="${movie.Title}">
+        <img src="${movie.Poster}" alt="${movie.Title}">
       </a>
     `;
     resultsContainer.appendChild(div);

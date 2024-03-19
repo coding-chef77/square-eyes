@@ -16,7 +16,14 @@ async function fetchMovieDetails(id) {
     document.getElementById("loader").style.display = "block";
     const response = await fetch(url);
     if (!response.ok) throw new Error("Network response was not ok");
+
     const movie = await response.json();
+    if (movie.Response === "False") {
+      throw new Error(
+        movie.Error || "An error occurred while fetching the movie details."
+      );
+    }
+
     displayMovieDetails(movie);
   } catch (error) {
     displayError(error.message);
@@ -27,22 +34,25 @@ async function fetchMovieDetails(id) {
 
 function displayMovieDetails(movie) {
   const resultsContainer = document.getElementById("results");
+  const poster =
+    movie.Poster !== "N/A" ? movie.Poster : "path/to/default/image.jpg"; // Fallback for missing poster
+
   resultsContainer.innerHTML = `
-  <div class="movie-card">
-  <h2>${movie.Title} (${movie.Year})</h2>
-  <div class="movie-details">
-    <div class="movie-poster">
-      <img src="${movie.Poster}" alt="${movie.Title}">
+    <div class="movie-card">
+      <h2>${movie.Title} (${movie.Year})</h2>
+      <div class="movie-details">
+        <div class="movie-poster">
+          <img src="${poster}" alt="${movie.Title}">
+        </div>
+        <div class="movie-info">
+          <p>${movie.Plot}</p>
+          <p>Director: ${movie.Director}</p>
+          <p>Actors: ${movie.Actors}</p>
+          <p>Release Year: ${movie.Year}</p>
+          <p>Runtime: ${movie.Runtime}</p>
+        </div>
+      </div>
     </div>
-    <div class="movie-info">
-      <p>${movie.Plot}</p>
-      <p>Director: ${movie.Director}</p>
-      <p>Actors: ${movie.Actors}</p>
-      <p>Release Year: ${movie.Year}</p>
-      <p>Runtime: ${movie.Runtime}</p>
-    </div>
-  </div>
-</div>
   `;
 
   const returnButton = document.createElement("button");
