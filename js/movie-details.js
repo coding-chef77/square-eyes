@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function fetchMovieDetails(id) {
-  const url = `http://www.omdbapi.com/?i=${id}&apikey=53361d6&plot=full`;
+  const url = `https://www.omdbapi.com/?i=${id}&apikey=53361d6&plot=full`;
 
   try {
     document.getElementById("loader").style.display = "block";
